@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f1c194c531263959d84d2f71e9fe1fc0, type: 2}
+  - {fileID: 2100000, guid: edd58d210cab87648b554c1d8418df54, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4909,8 +4909,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7402610934667382944}
+  - component: {fileID: 5951338604227358515}
   m_Layer: 0
-  m_Name: TemplateRobotPrefab
+  m_Name: MagentaRobot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4934,6 +4935,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5951338604227358515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7402610934667382945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb3b13fa70cdaeedb8ff4c6dd291ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyGreeting: hello world
 --- !u!1 &7402610935257454847
 GameObject:
   m_ObjectHideFlags: 0

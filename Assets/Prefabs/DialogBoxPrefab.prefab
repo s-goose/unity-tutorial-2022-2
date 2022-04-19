@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 401812385672828835}
   - component: {fileID: 7787515132828941377}
   - component: {fileID: 5621797438629541904}
+  - component: {fileID: 1595631024284934061}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: DBCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,6 +101,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1595631024284934061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249421107325095081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a891a8d51a18c9bfa0ec9de0e39d744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talkTime: 3.5
 --- !u!1 &6494295159068552568
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +126,7 @@ GameObject:
   - component: {fileID: 5929113801370369162}
   - component: {fileID: 8926717912154840239}
   m_Layer: 0
-  m_Name: Text
+  m_Name: DBText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
