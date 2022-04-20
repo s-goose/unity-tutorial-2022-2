@@ -9,8 +9,12 @@ public class DialogBox : MonoBehaviour
     private Text text;
     private float timeout = 0.0f;
 
-    void Start(){
-        text = GetComponentInChildren<Text>(); //Find the text element
+    void Awake(){
+        // This is declared in awake instead of Start because
+        // other objects may make use a DialogBox in their Start()
+        // which can leading to NullRefs if we hadn't done this here.
+        // OR... we could have just set text in the inspector.
+        text = GetComponentInChildren<Text>();
         text.text = "";
     }
 
@@ -26,7 +30,7 @@ public class DialogBox : MonoBehaviour
     }
 
     public void SaySomething(string talk) {
-        // Set the dialog text and begin a time out to clear it.
+        // Set the dialog text and begin a countdown to clear it.
         text.text = talk;
         timeout = talkTime;
     }
