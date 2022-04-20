@@ -46,11 +46,15 @@ public abstract class BasicRobot : MonoBehaviour
     // ---------------------
 
     // All robots greet in the same way... because their programming forces them too!
+    // The speaking is handled by dialogBox's SaySomething method, so we don't need the details.
+    // ABSTRACTION
     public void Greet() {
         dialogBox.SaySomething(greeting);
     }
 
     // Robots can Identify and Jump as they wish or per the instruction manual
+    // So these are default methods that can be changed.
+    // POLYMORPHISM
     public virtual void Identify() {
         dialogBox.SaySomething($"Hello. My name is {robotClassName}");
     }
